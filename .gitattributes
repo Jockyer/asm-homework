@@ -1,0 +1,13 @@
+# 本仓库是 DOS 老项目：文件**按原样存储**，不做任何换行转换。
+# 仓库内已设置 core.autocrlf=false，保证 git clone / 下载 ZIP 得到的字节
+# 与原始文件完全一致（汇编源码必须是 CRLF，否则 MASM 可能报错）。
+#
+# 注意：不要在这里写 "text" 或 "eol="，那会让 Git 把 CRLF 规范化成 LF。
+
+# 二进制产物：不参与文本 diff
+*.exe  binary
+*.EXE  binary
+*.com  binary
+*.COM  binary
+*.obj  binary
+*.OBJ  binary

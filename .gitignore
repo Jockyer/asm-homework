@@ -1,0 +1,20 @@
+# ==== 不上传：课程提供的工具（含微软版权，勿公开分发）====
+masm/
+editor/
+
+# ==== 不上传：MASM / LINK 的中间产物 ====
+*.OBJ
+*.obj
+*.LST
+*.lst
+*.CRF
+*.crf
+*.MAP
+*.map
+*.SYM
+*.sym
+*.ERR
+
+# ==== 其他 ====
+*.bak
+*.tmp
