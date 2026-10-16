@@ -1,0 +1,35 @@
+C:\WORK>masm hello;
+Microsoft (R) Macro Assembler Version 5.00 
+Copyright (C) Microsoft Corp 1981-1985, 1987.  All rights reserved.
+
+
+  51748 + 464780 Bytes symbol space free
+
+      0 Warning Errors
+      0 Severe  Errors
+
+C:\WORK>link hello;
+
+Microsoft (R) Overlay Linker  Version 3.60
+Copyright (C) Microsoft Corp 1983-1987.  All rights reserved.
+
+LINK : warning L4021: no stack segment
+
+C:\WORK>hello
+Hello, Assembly!
+
+C:\WORK>debug hello.exe < dbg1.txt
+-u
+0742:0000 B84007            MOV     AX,0740
+0742:0003 8ED8              MOV     DS,AX
+0742:0005 BA0000            MOV     DX,0000
+0742:0008 B409              MOV     AH,09
+0742:000A CD21              INT     21
+0742:000C B8004C            MOV     AX,4C00
+0742:000F CD21              INT     21
+0742:0011 B84005            MOV     AX,0540
+0742:0014 50                PUSH    AX
+0742:0015 E8F073            CALL    7408
+0742:0018 83C402            ADD     SP,+02
+0742:001B C6064D07FF        MOV     BYTE PTR [074D],FF
+-q
